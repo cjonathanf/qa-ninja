@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="20" skipped="0" failures="0" errors="0" time="0.007160" timestamp="2020-10-03T00:13:12-03:00" hostname="cjonathanf-VirtualBox">
+<properties>
+<property name="seed" value="27359"/>
+</properties>
+<testcase classname="spec.avangers_spec" name="AvangersHeadQuarter deve adicionar um vingador" file="./spec/avangers_spec.rb" time="0.000841"></testcase>
+<testcase classname="spec.avangers_spec" name="AvangersHeadQuarter deve adicionar uma lista de vingadores" file="./spec/avangers_spec.rb" time="0.001302"></testcase>
+<testcase classname="spec.avangers_spec" name="AvangersHeadQuarter Thor deve ser o primeiro da lista" file="./spec/avangers_spec.rb" time="0.000475"></testcase>
+<testcase classname="spec.avangers_spec" name="AvangersHeadQuarter Iroman deve ser o ultimo da lista" file="./spec/avangers_spec.rb" time="0.000086"></testcase>
+<testcase classname="spec.avangers_spec" name="AvangersHeadQuarter deve conter o sobre nome" file="./spec/avangers_spec.rb" time="0.000488"></testcase>
+<testcase classname="spec.bank.saque_cc_spec" name="ContaCorrente Saque entao atualiza o saldo" file="./spec/bank/saque_cc_spec.rb" time="0.000293"></testcase>
+<testcase classname="spec.bank.saque_cc_spec" name="ContaCorrente Deu ruim não tenho saldo entao exibe mensagem" file="./spec/bank/saque_cc_spec.rb" time="0.000055"></testcase>
+<testcase classname="spec.bank.saque_cc_spec" name="ContaCorrente Deu ruim não tenho saldo e o saldo permanece conforme o valor inicial" file="./spec/bank/saque_cc_spec.rb" time="0.000057"></testcase>
+<testcase classname="spec.bank.saque_cc_spec" name="ContaCorrente Deu ruim não tenho saldo quando o saldo e insuficiente entao vejo mensagem" file="./spec/bank/saque_cc_spec.rb" time="0.000061"></testcase>
+<testcase classname="spec.bank.saque_cc_spec" name="ContaCorrente Deu ruim não tenho saldo quando o saldo e insuficiente e o saldo permanece conforme o valor inicial" file="./spec/bank/saque_cc_spec.rb" time="0.000050"></testcase>
+<testcase classname="spec.bank.saque_cc_spec" name="ContaCorrente Deu ruim não tenho saldo quando superar o limite de saque entao vejo a mensagem" file="./spec/bank/saque_cc_spec.rb" time="0.000054"></testcase>
+<testcase classname="spec.bank.saque_cc_spec" name="ContaCorrente Deu ruim não tenho saldo quando superar o limite de saque e o saldo permanece" file="./spec/bank/saque_cc_spec.rb" time="0.000056"></testcase>
+<testcase classname="spec.bank.saque_cp_spec" name="ContaPoupanca Saque entao atualiza o saldo" file="./spec/bank/saque_cp_spec.rb" time="0.000055"></testcase>
+<testcase classname="spec.bank.saque_cp_spec" name="ContaPoupanca Deu ruim não tenho saldo entao exibe mensagem" file="./spec/bank/saque_cp_spec.rb" time="0.000054"></testcase>
+<testcase classname="spec.bank.saque_cp_spec" name="ContaPoupanca Deu ruim não tenho saldo e o saldo permanece conforme o valor inicial" file="./spec/bank/saque_cp_spec.rb" time="0.000049"></testcase>
+<testcase classname="spec.bank.saque_cp_spec" name="ContaPoupanca Deu ruim não tenho saldo quando o saldo e insuficiente entao vejo mensagem" file="./spec/bank/saque_cp_spec.rb" time="0.000053"></testcase>
+<testcase classname="spec.bank.saque_cp_spec" name="ContaPoupanca Deu ruim não tenho saldo quando o saldo e insuficiente e o saldo permanece conforme o valor inicial" file="./spec/bank/saque_cp_spec.rb" time="0.000054"></testcase>
+<testcase classname="spec.bank.saque_cp_spec" name="ContaPoupanca Deu ruim não tenho saldo quando superar o limite de saque entao vejo a mensagem" file="./spec/bank/saque_cp_spec.rb" time="0.000061"></testcase>
+<testcase classname="spec.bank.saque_cp_spec" name="ContaPoupanca Deu ruim não tenho saldo quando superar o limite de saque e o saldo permanece" file="./spec/bank/saque_cp_spec.rb" time="0.000049"></testcase>
+<testcase classname="spec.exemplos_spec" name="suite rspec soma de valores" file="./spec/exemplos_spec.rb" time="0.000059"></testcase>
+</testsuite>
