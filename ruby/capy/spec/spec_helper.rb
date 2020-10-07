@@ -18,14 +18,21 @@ RSpec.configure do |config|
 
   config.shared_context_metadata_behavior = :apply_to_host_groups
   config.include Capybara::DSL
+
   config.before(:example) do
-    page.current_window.resize_to(1920, 1080)
+  page.current_window.resize_to(1280, 800)
   end
 
+  config.after(:example) do |e|
+    nome = e.description.gsub(/[^A-Za-z0-9 ]/, '').tr(' ', '_')
+    page.save_screenshot('log/' + nome + ".png" ) #metodo pra tirar print apenas se o cenario falhar  #if e.exception
+  end
 end
 
 Capybara.configure do |config|
   config.default_driver = :selenium
   config.default_max_wait_time = 10
-  config.app_host = "https://training-wheels-protocol.herokuapp.com"
+  config.app_host = "https://training-wheels-protocol.herokuapp.com/"
+
+
 end

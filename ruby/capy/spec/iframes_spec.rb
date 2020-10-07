@@ -5,13 +5,13 @@ describe "Iframes", :iframes do
 
     describe "bom", :bom do
         before(:each) do
-            visit "https://training-wheels-protocol.herokuapp.com/nice_iframe"
+            visit "/nice_iframe"
     end
 
     it "adicionando ao carrinho" do
-        scroll_to(:bottom)
         within_frame("burgerId") do
             produto = find(".menu-item-info-box", text: "REFRIGERANTE")
+            page.execute_script("document.getElementById('cart').scrollIntoView()");
             produto.find(".add-to-cart").click
             expect(find("#cart")).to have_content "R$ 4,50"
             sleep 3
@@ -22,7 +22,7 @@ end
 
         describe "ruim", :bad do
             before(:each) do
-                visit "https://training-wheels-protocol.herokuapp.com/bad_iframe"
+                visit "/bad_iframe"
         end
 
         it "Carrinho deve estar vazio" do
@@ -30,6 +30,7 @@ end
             page.execute_script(script)
 
             within_frame('tempId') do
+                page.execute_script("document.getElementById('cart').scrollIntoView()");
                 expect(find("#cart")).to have_content "Seu carrinho está vazio!"
                 sleep(3)
             end

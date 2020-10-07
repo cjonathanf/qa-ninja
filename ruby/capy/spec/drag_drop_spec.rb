@@ -1,7 +1,7 @@
 
 describe "drag and drop", :drop do
     before(:each) do
-        visit "https://training-wheels-protocol.herokuapp.com/drag_and_drop"
+        visit "/drag_and_drop"
     end
     it "Homen aranhha pertence ao time do stark" do
         stark = find(".team-stark .column")
